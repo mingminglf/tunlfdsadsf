@@ -1,0 +1,13 @@
+name = "tunlfdsadsf"
+main = "build/worker/shim.mjs"
+compatibility_date = "2024-05-23"
+minify = true
+
+[build]
+command = "cargo install -q worker-build && worker-build --release"
+
+[env.dev]
+build = { command = "cargo install -q worker-build && worker-build --dev" }
+
+[vars]
+UUID = "ff45431e-46f1-409d-b105-8d3c49a3cbbd"
